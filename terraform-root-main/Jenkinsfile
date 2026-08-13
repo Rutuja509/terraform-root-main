@@ -32,6 +32,7 @@ stages {
 
     stage('Terraform Init') {
         steps {
+            sh 'pwd && ls -la'
             sh """
             terraform init -reconfigure \
             -backend-config="key=${params.ENV}/terraform.tfstate"
