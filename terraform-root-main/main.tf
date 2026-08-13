@@ -17,7 +17,7 @@ locals {
 
 # ── VPC ──────────────────────────────────────────────────────────────
 module "vpc" {
-  source = "git::https://github.com/Rutuja50/terraform-module-vpc-main.git"
+  source = "git::https://github.com/Rutuja509/terraform-module-vpc-main.git"
 
   cidr_block = var.vpc_cidr
   vpc_name   = "${local.name_prefix}-vpc"
